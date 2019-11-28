@@ -1,0 +1,60 @@
+header, footer {
+    background-color: #283593;
+}
+
+body {
+    background-color: #737ece;
+}
+
+header h1 {
+    margin: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+
+    width: 100vw;
+    height: 10vh;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    margin: 0;
+    height: 10vh;
+    background-color: #283593;
+}
+
+main {
+    max-width: 1024px;
+    margin: auto;
+    margin-bottom: 10vh;
+    background-color: #fff;
+}
+/* Clases
+******************************************************+*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.container > div {
+    width: 48%;
+    height: 50vh;
+    border: 3px solid pink;
+    background-color: red;
+    margin: 1%;
+}
+
+.header-wrapper {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.footer-wrapper {
+    max-width: 1024px;
+    margin: auto;
+    padding: 1.5rem 0;
+}
