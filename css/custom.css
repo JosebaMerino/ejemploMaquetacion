@@ -1,4 +1,4 @@
-header, footer {
+body > header,body > footer {
     background-color: #283593;
 }
 
@@ -10,7 +10,7 @@ header h1 {
     margin: 0;
 }
 
-footer {
+body > footer {
     position: fixed;
     bottom: 0;
 
@@ -18,11 +18,12 @@ footer {
     height: 10vh;
 }
 
-header {
+body > header {
     position: sticky;
     top: 0;
     margin: 0;
     height: 10vh;
+    z-index: 100;
     background-color: #283593;
 }
 
@@ -57,4 +58,108 @@ main {
     max-width: 1024px;
     margin: auto;
     padding: 1.5rem 0;
+}
+
+.igualdad {
+    background-image: url("/images/hister.png");
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+
+    height: 110vh !important;
+
+    position: relative;
+}
+
+.igualdad header {
+    margin-top: 2vh;
+}
+
+.igualdad h2 {
+    font-size: 4.6vw;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 3px 5px 10px black;
+    color: #ffed02;
+    font-family: "RockwellNovaW15-Regular"
+}
+
+.igualdad h3 {
+    text-align: center;
+    font-size: 2.5vw;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 3px 5px 10px black;
+    color: #ffed02;
+    font-family: "RockwellNovaW15-Regular"
+}
+
+.igualdad blockquote::before {
+    content: '“';
+}
+
+.igualdad blockquote {
+    font-size: 7.5vh;
+    margin: 0 2vh;
+    padding: 1vh 2vh;
+    background-color: rgba(255, 255, 0, 0.733);
+    font-family: "Ealing";
+    position: absolute;
+    bottom: 23%;
+}
+
+.igualdad blockquote::after {
+    content: '”';
+}
+
+.igualdad footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    height: 15vh;
+    padding: 2vh;
+}
+
+.igualdad footer img {
+    width: 20%;
+    height: auto;
+}
+
+.igualdad footer p {
+    width: 80%;
+    font-size: 1.5vh;
+}
+
+.igualdad .emakunde {
+    width: 20%;
+    height: 45%;
+    text-align: center;
+}
+
+.igualdad .emakunde img {
+    height: 100%;
+    width: auto;
+}
+
+.igualdad footer p:nth-child(3) {
+    color: purple;
+    font-size: 1.8vh;
+    font-weight: bold;
+}
+
+.igualdad footer p:nth-child(3) span {
+    text-transform: uppercase;
+}
+
+.rockwell {
+    font-family: "RockwellNovaW15-Regular"
+}
+
+.earling {
+    font-family: "Ealing";
 }
